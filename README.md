@@ -1,0 +1,1 @@
+# TrueLime.Conventions.EditorConfig
