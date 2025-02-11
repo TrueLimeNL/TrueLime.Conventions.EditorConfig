@@ -1,0 +1,29 @@
+<Project>
+
+  <PropertyGroup>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <NoWarn>$(NoWarn);CA1014</NoWarn>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+    <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <EditorConfigFilesToCopy Include="$(MSBuildThisFileDirectory)..\content\.editorconfig"/>
+  </ItemGroup>
+  
+  <Target Name="CopyEditorConfig" BeforeTargets="BeforeBuild">
+    <Message Text="Copying the .editorconfig file from '@(EditorConfigFilesToCopy)' to '$(MSBuildProjectDirectory)'"></Message>
+    <Copy
+      SourceFiles="@(EditorConfigFilesToCopy)"
+      DestinationFolder="$(MSBuildProjectDirectory)"
+      SkipUnchangedFiles="true"
+      UseHardlinksIfPossible="false"/>
+  </Target>
+
+</Project>

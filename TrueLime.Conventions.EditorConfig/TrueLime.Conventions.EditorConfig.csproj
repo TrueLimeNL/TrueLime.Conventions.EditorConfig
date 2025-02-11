@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <Authors>Maikel Vreugde</Authors>
+    <Owners>TrueLime BV</Owners>
+    <Company>TrueLime BV</Company>
+    <Product>TrueLime.Conventions.EditorConfig</Product>
+    <Description>Package which will include an .editorconfig file to your project.</Description>
+    <Summary>Package which will include an .editorconfig file to your project.</Summary>
+    <Copyright>Copyright © TrueLime BV 2025</Copyright>
+    <Title>TrueLime.Conventions.EditorConfig</Title>
+    <PackageId>TrueLime.Conventions.EditorConfig</PackageId>
+    <PackageTags>editorconfig</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>TrueLimeIcon.jpg</PackageIcon>
+    <PackageIconUrl>https://github.com/TrueLimeNL/TrueLime.Conventions.EditorConfig/blob/main/TrueLimeIcon.jpg</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/TrueLimeNL/TrueLime.Conventions.EditorConfig</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="TrueLime.Conventions.EditorConfig.props" Pack="true" PackagePath="\build" />
+    <None Include=".editorconfig" Pack="true" PackagePath="\content" />
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="\" />
+    <None Include="..\TrueLimeIcon.jpg" Pack="true" PackagePath="\" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
