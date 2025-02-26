@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Authors>Maikel Vreugde</Authors>
     <Owners>TrueLime BV</Owners>
     <Company>TrueLime BV</Company>
@@ -13,8 +14,8 @@
     <PackageId>TrueLime.Conventions.EditorConfig</PackageId>
     <PackageTags>editorconfig</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageIcon>TrueLimeIcon.jpg</PackageIcon>
-    <PackageIconUrl>https://github.com/TrueLimeNL/TrueLime.Conventions.EditorConfig/blob/main/TrueLimeIcon.jpg</PackageIconUrl>
+    <PackageIcon>TrueLimeIcon.png</PackageIcon>
+    <PackageIconUrl>https://github.com/TrueLimeNL/TrueLime.Conventions.EditorConfig/blob/main/TrueLimeIcon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/TrueLimeNL/TrueLime.Conventions.EditorConfig</PackageProjectUrl>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -27,7 +28,7 @@
     <None Include="TrueLime.Conventions.EditorConfig.props" Pack="true" PackagePath="\build" />
     <None Include=".editorconfig" Pack="true" PackagePath="\content" />
     <None Include="..\LICENSE.md" Pack="true" PackagePath="\" />
-    <None Include="..\TrueLimeIcon.jpg" Pack="true" PackagePath="\" />
+    <None Include="..\TrueLimeIcon.png" Pack="true" PackagePath="\" />
     <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
